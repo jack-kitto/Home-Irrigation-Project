@@ -1,10 +1,10 @@
 import React from 'react';
-import ControlPanel from './components/controlPanel/ControlPanel';
+import ControlButton from './components/controlButtons/ControlButton';
 
 export default function App() {
   return(
     <div>
-      <ControlPanel />
+      <ControlButton />
     </div>
   );
 }
