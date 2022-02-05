@@ -8,7 +8,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 export default function ControlButton(props) {
 
   // const [checked, setChecked] = useState()
-  const baseUrl = "http://192.168.20.11";
+  const baseUrl = "http://192.168.20.9"
   const checkState = baseUrl + "/" + props.num + "/state";
   const low = baseUrl + "/" + props.num + "/low";
   const high = baseUrl + "/" + props.num + "/high";
@@ -146,10 +146,10 @@ export default function ControlButton(props) {
 
   return (
      <FormGroup style={buttons}>
-      <FormControlLabel control={<Switch onChange={handleChange1} checked={checked1} defaultChecked />} label="Valve 1" />
-      <FormControlLabel control={<Switch onChange={handleChange2} checked={checked2} defaultChecked />} label="Valve 2" />
-      <FormControlLabel control={<Switch onChange={handleChange3} checked={checked3} defaultChecked />} label="Valve 3" />
-      <FormControlLabel control={<Switch onChange={handleChange4} checked={checked4} defaultChecked />} label="Valve 4" />
+      <FormControlLabel control={<Switch onChange={handleChange1} checked={checked1} defaultChecked />} label="Lawn" />
+      <FormControlLabel control={<Switch onChange={handleChange2} checked={checked2} defaultChecked />} label="Ferns" />
+      <FormControlLabel control={<Switch onChange={handleChange3} checked={checked3} defaultChecked />} label="Top Level Orchard" />
+      <FormControlLabel control={<Switch onChange={handleChange4} checked={checked4} defaultChecked />} label="Fence" />
     </FormGroup>
   );
 
